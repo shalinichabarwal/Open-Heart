@@ -1,0 +1,45 @@
+.paragraph{
+    margin-top: 4%;
+}
+.title{
+    color: white;
+    margin-left: 20px;
+}
+.upper{
+    margin-left: 50%;
+}
+.form{
+    margin-top: 5%;
+}
+
+.title1{
+    margin-bottom: 2px;
+}
+img{
+    float: left;
+}
+.about{
+    margin-top: 5%;
+    margin-left: 7%;
+}
+.body{
+    margin-bottom: 0px;
+}
+.delete{
+    margin-left: 95%;
+}
+.top{
+    color: #F1F6F9;
+    font-size: 20px;
+}
+.a{
+    color: white;
+}
+@media(max-width:993x){
+    img{
+        float: none;
+    }
+}
+.abb{
+    display: flex;
+}

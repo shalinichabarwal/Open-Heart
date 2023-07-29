@@ -1,0 +1,29 @@
+<%-include("heading")-%>
+
+    <div class="top paragraph container">
+        <p>
+            Hello sunshine! As we all know that awareness regarding mental peace is increasing day by day. Here's my contribution to it.
+            This is an open platform so that you can share your feelings, thoughts, experiences and theories about the world, that's why I named it as "Open Heart". (Your name will be kept secret, so don't worry about it).
+        So, if you don't have anybody to listen, we are here. If you want to guide others through your own healing story, we are here to listen. Just click on Compose and start writing. 
+        At last I want to say "Keep going, you are doing best of your potential, you'll succeed one day."
+        </p>
+    </div>
+    <div class="post container">
+        <% for(var i=0;i<posts.length;i++){ %>
+            <h1>
+                <%= posts[i].title%>
+            </h1>
+            <p class="body">
+                <%= posts[i].body%>
+            </p>
+            <form action="/delete" method="post" >
+                <button class="delete" type="submit" name="del" value="<%= posts[i]._id %>"><img src="delete.png" alt="delete"
+                        height="20px"></button>
+            </form>
+
+            <% } %>
+
+    </div>
+    </body>
+
+    </html>
