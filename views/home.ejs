@@ -16,10 +16,7 @@
             <p class="body">
                 <%= posts[i].body%>
             </p>
-            <form action="/delete" method="post" >
-                <button class="delete" type="submit" name="del" value="<%= posts[i]._id %>"><img src="delete.png" alt="delete"
-                        height="20px"></button>
-            </form>
+            
 
             <% } %>
 
