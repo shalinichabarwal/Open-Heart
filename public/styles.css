@@ -31,6 +31,9 @@ img{
     color: black;
     font-size: 20px;
 }
+.pp{
+    margin-left: 8%;
+}
 .a{
     color: white;
 }
@@ -41,4 +44,32 @@ img{
 }
 .abb{
     display: flex;
+}
+
+.heart{
+    position: absolute;
+    margin-top: 3%;
+    transform: translate(-50%,-50%);
+
+}
+i{
+    color: #000;
+    font-size: 90px;
+    animation: beat 0.9s infinite;
+    text-shadow:
+        0 0 5px rgb(90, 85, 85),
+        0 0 45px rgb(90, 85, 85),
+        0 0 90px rgb(90, 85, 85)
+    ;
+}
+@keyframes beat{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.15);
+    }
+    40%{
+        transform: scale(1.4);
+    }
 }
