@@ -1,14 +1,29 @@
 <%-include("heading")-%>
-<form action="/compose" method="post">
-    <div class="form-group container form">
-        <div class="title1">
-        <label>Title</label>
-        <input type="text" class="form-control " name="title" ></div>
-        <div class="title1">
-        <label>Post</label>
-        <textarea class="form-control" rows="5" name="body"></textarea></div>
-        <button type="submit" class="btn btn-secondary">Publish</button>
+    <form action="/compose" method="post">
+        <div class="form-group container form">
+            <div class="title1">
+                <label>Title</label>
+                <input type="text" class="form-control " name="title">
+            </div>
+            <div class="title1">
+                <label>Post</label>
+                <textarea class="form-control" rows="5" name="body"></textarea>
+            </div>
+            <div class="title1">
+                <label>Category:</label>
+                <div class="title1">
 
-    </div>
-    
-</form>
+                    <input type="radio" id="1" name="category" value="Thoughts">
+                     <label for="1">Thought</label><br>
+                    
+                </div>
+                <div class="title1">
+
+                    <input type="radio" id="2" name="category" value="Quote">
+                     <label for="2">Quote</label><br>
+                </div>
+                <button type="submit" class="btn btn-secondary">Publish</button>
+
+            </div>
+
+    </form>
