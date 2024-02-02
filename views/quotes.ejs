@@ -1,21 +1,22 @@
 <%-include("heading")-%>
 
-    <div class="post container">
+    <div class="post container quote">
         <% for(var i=0;i<posts.length;i++){ %>
-            <h1>
+            <h3>
                 <%= posts[i].title%>
-            </h1>
+                <!-- <button type="submit" class="delete" name="del" value="<%= posts[i]._id %>"
+                        onclick="deleted('<%= posts[i]._id %>')">
+                        <span><img src="delete.png" alt="delete" height="20px"></span>
+                    </button> -->
+
+            </h3>
             <p class="body">
                 <%= posts[i].body%> <br>
             </p>
-            <!-- <form action="/delete" method="post" >
-                <button class="delete" type="submit" name="del" value="<%= posts[i]._id %>"><img src="delete.png" alt="delete"
-                        height="20px"></button>
-            </form> -->
-
             <% } %>
 
     </div>
+
     </body>
 
     </html>
