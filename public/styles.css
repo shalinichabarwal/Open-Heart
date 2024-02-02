@@ -37,6 +37,12 @@ img{
 .a{
     color: white;
 }
+.a:hover{
+    color: #000;
+}
+h3{
+    margin-bottom: 0px;
+}
 @media(max-width:993x){
     img{
         float: none;
